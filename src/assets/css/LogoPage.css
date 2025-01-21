@@ -1,0 +1,191 @@
+/* styles/HomePage.css */
+
+/* Base Layout Styles */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  height: 88vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.logo-section {
+  width: 100%;
+  height: 50%;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/Logo/logoNoBg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.content-section {
+  width: 100%;
+  height:50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.logo {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #7c3aed;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #8b5cf6;
+  text-align: center;
+  max-width: 28rem;
+}
+
+.cta-button {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #7c3aed;
+  color: white;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+/* Animations */
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation Classes */
+.animate-slide-right {
+  animation: slideRight 0.8s ease-out forwards;
+}
+
+.animate-slide-left {
+  animation: slideLeft 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.animate-fade-in-delay {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+  animation-delay: 0.7s;
+}
+
+.animate-fade-in-delay-2 {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+  animation-delay: 0.9s;
+}
+
+/* Button Interactions */
+.cta-button:hover {
+  background-color: #6d28d9;
+  transform: scale(1.05);
+}
+
+.cta-button:active {
+  transform: scale(0.95);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .homepage-container {
+    flex-direction: row;
+  }
+
+  .logo-section,
+  .content-section {
+    width: 50%;
+    height: 100%;
+  }
+
+  .logo {
+    font-size: 3.75rem;
+  }
+
+  .title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.25rem;
+  }
+
+  .content-section {
+    padding: 3rem;
+  }
+
+  .cta-button {
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+  }
+}
+
+/* Small Screen Optimizations */
+@media (max-width: 380px) {
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.875rem;
+  }
+}
+
+/* Height Adjustments */
+@media (max-height: 600px) {
+  .homepage-container {
+    height: auto;
+    min-height: 100vh;
+  }
+}

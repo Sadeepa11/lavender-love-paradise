@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url("../src/assets/fonts/LeagueSpartan.ttf");
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Finger Paint';
+    src: url("../../assets/fonts/FingerPaint.ttf");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+/* General Navigation Styles */
+.flower-nav {
+  position: sticky;
+  top: 0; /* Ensures it stays at the top when scrolling */
+  width: 100%;
+  z-index: 50;
+  background-color: #dbbcf9; /* Light purple */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flower-nav.scrolled {
+  background-color: #b391d4; /* Darker purple for stopped position */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a "stopped" effect */
+}
+
+  
+  .flower-nav.scrolled {
+    background-color: #ffffff; /* White */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  /* Nav Content */
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    font-family:'LeagueSpartan';
+  }
+  
+  .logo-icon {
+    width: 48px;
+    height: 48px;
+    background-color: #9333ea; /* Purple */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* White */
+  }
+  
+  .logo-text {
+    margin-left: 12px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #6b21a8; /* Dark purple */
+    font-family:'LeagueSpartan';
+  }
+  
+  /* Desktop Links */
+  .nav-links {
+    display: none;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #6b21a8;
+    font-weight: 500;
+    padding: 8px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+    font-family: 'Finger Paint';
+  }
+  
+  .nav-link:hover {
+    background-color: #f3e8ff; /* Very light purple */
+    color: #4c1d95; /* Darker purple */
+  }
+  
+  /* Mobile Menu Button */
+  .menu-btn {
+    color: #9333ea;
+    cursor: pointer;
+    display: block;
+  }
+  
+  /* Mobile Navigation */
+  .mobile-nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mobile-nav-link {
+    display: block;
+    text-decoration: none;
+    color: #6b21a8;
+    padding: 12px 16px;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+    font-family: 'Finger Paint';
+  }
+  
+  .mobile-nav-link:hover {
+    background-color: #f3e8ff;
+    color: #4c1d95;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 790px) {
+    .menu-btn {
+      display: none;
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 16px;
+    }
+  
+    .mobile-nav {
+      display: none;
+    }
+  }
+  

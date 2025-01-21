@@ -25,7 +25,7 @@
     width: 100px;
     height: 60px;
 
-    background-image: url("src/assets/Logo/devLogo.png");
+    background-image: url(src/assets/Logo/devLogo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

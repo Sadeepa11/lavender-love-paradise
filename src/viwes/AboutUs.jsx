@@ -17,7 +17,7 @@ const AboutUs = () => {
           <div className="image-container">
             <img
               src= {owner}
-              alt="Thakshila Thisarani Rajapakshe - Owner of Fresh Flowers"
+              alt="Owner's - Owner of Fresh Flowers"
               className="owner-photo"
             />
             {/* <div className="established-badge">
@@ -30,7 +30,7 @@ const AboutUs = () => {
         <div className="about-content">
           <h1 className="heading">About Fresh Flowers</h1>
           <div className="owner-details">
-            <h2 className="owner-name">Thakshila Thisarani Rajapakshe</h2>
+            <h2 className="owner-name">Owner's Name</h2>
             <p className="title">Founder & Lead Florist</p>
           </div>
           <div className="text-content">

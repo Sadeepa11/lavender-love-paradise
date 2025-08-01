@@ -118,19 +118,19 @@ const ContactPage = () => {
                 <div style={styles.icon}>
                   <i className="fas fa-phone" />
                 </div>
-                +94 75 113 5153
+                +94 7X XXX XXXX
               </div>
               <div style={styles.contactItem}>
                 <div style={styles.icon}>
                   <i className="fas fa-envelope" />
                 </div>
-                rajapakshathisarani38@gmail.com
+               owner@email.com
               </div>
               <div style={styles.contactItem}>
                 <div style={styles.icon}>
                   <i className="fas fa-map-marker-alt" />
                 </div>
-                No:2/1, Kalapura, Shanthipura, Nuwara Eliya
+                No:4/3,Temple Road, Homagama
               </div>
             </div>
             <a
@@ -148,10 +148,12 @@ const ContactPage = () => {
             <iframe
               style={styles.iframe}
               title="Flower Shop Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.253059148857!2d80.7513069!3d6.9794383999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae381c2dd1a2c4d%3A0x308c3228d6282400!2sShanthipura%20Church!5e0!3m2!1sen!2slk!4v1737472664203!5m2!1sen!2slk"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.2041015208174!2d80.0234316756812!3d6.866128319085499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253c944660f29%3A0xc047ed121c25b07c!2sTemple%20Rd!5e0!3m2!1sen!2slk!4v1754045953245!5m2!1sen!2slk"
               loading="lazy"
               allowFullScreen
             />
+
+       
           </div>
         </div>
       </div>

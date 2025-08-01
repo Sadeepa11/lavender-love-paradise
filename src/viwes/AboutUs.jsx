@@ -1,7 +1,7 @@
 
 import "../assets/css/AboutUs.css";
 
-import owner from "../assets/images/owner/owner.jpg";
+import owner from "../assets/images/owner/owner.webp";
 
 const AboutUs = () => {
   return (
